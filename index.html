@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
 <body>
@@ -14,28 +16,33 @@
             </div>
             <div class="numpad">
                 <div class="row">
+                    <button class="btn gray">AC</button>
+                    <button class="btn gray">&#177;</button>
+                    <button class="btn gray">%</button>
+                    <button class="btn orange" value="/" onclick=firstStep(this)>&#247</button>
+                </div>
+                <div class="row">
                     <button class="btn" value="7" onclick="showNum.value+=7">7</button>
                     <button class="btn" value="8" onclick="showNum.value+=8">8</button>
                     <button class="btn" value="9"  onclick="showNum.value+=9">9</button>
-                    <button class="btn" value="/" onclick=firstStep(this)>/</button>
+                    <button class="btn orange" value="*" onclick=firstStep(this)>&#215</button>
                 </div>
                 <div class="row">
                     <button class="btn" value="4" onclick="showNum.value+=4">4</button>
                     <button class="btn" value="5" onclick="showNum.value+=5">5</button>
                     <button class="btn" value="6" onclick="showNum.value+=6">6</button>
-                    <button class="btn" value="*" onclick=firstStep(this)>*</button>
+                    <button class="btn orange" value="-" onclick=firstStep(this)>&#8722;</button>
                 </div>
                 <div class="row">
                     <button class="btn" value="1" onclick="showNum.value+=1">1</button>
                     <button class="btn" value="2" onclick="showNum.value+=2">2</button>
                     <button class="btn" value="3" onclick="showNum.value+=3">3</button>
-                    <button class="btn" value="-" onclick=firstStep(this)>-</button>
+                    <button class="btn orange" value="+" onclick=firstStep(this)>&#43;</button>
                 </div>
                 <div class="row">
-                    <button class="btn" value="0" onclick="showNum.value+=0">0</button>
+                    <button class="btn cero" value="0" onclick="showNum.value+=0">0</button>
                     <button class="btn" value="." onclick="showNum.value+='.'">.</button>
-                    <button class="btn" value="=" onclick=result()>=</button>
-                    <button class="btn" value="+" onclick=firstStep(this)>+</button>
+                    <button class="btn orange" value="=" onclick=result()>&#61;</button>
                 </div>
             </div>
         </div>
