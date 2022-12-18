@@ -44,7 +44,6 @@ function Copy() {
 
     // Select the text field
     focus(clipboard);
-    copyText.setSelectionRange(0, 99999);
 
     // Copy the text inside the text field
     navigator.clipboard.writeText(clipboard);
