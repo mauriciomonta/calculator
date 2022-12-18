@@ -44,6 +44,7 @@ function Copy() {
 
     // Select the text field
     focus(clipboard);
+    copyText.setSelectionRange(0, 99999);
 
     // Copy the text inside the text field
     navigator.clipboard.writeText(clipboard);
@@ -53,15 +54,15 @@ function Copy() {
         { transform: 'scale(1)' },
         { transform: 'scale(1.03)' },
         { transform: 'scale(1)' }
-      ];
-      
-      const growTiming = {
+    ];
+
+    const growTiming = {
         duration: 200,
         iterations: 1,
-      }
+    }
 
-      const value = document.getElementById("showNum");
-      value.animate(grow, growTiming)
+    const value = document.getElementById("showNum");
+    value.animate(grow, growTiming)
 
 
     // Alert the copied text
