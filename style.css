@@ -84,8 +84,10 @@ body{
 
 .copied{
     position: absolute;
+    width: 100vw;
     top: 15%;
-    left: 25%;
+    left: 0;
+    justify-content: center;
     display: none;
     color: #fff;
     opacity: 0%;
