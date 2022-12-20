@@ -8,3 +8,5 @@ Pending tasks:
 - [ ] Funcitionality of % button.
 - [ ] AC Button working but don't update.
 - [ ] Add max lenght to input.
+- [ ] Type negative number.
+- [ ] Highlight pressed operator symbol.
