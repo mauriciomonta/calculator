@@ -7,3 +7,4 @@ Pending tasks:
 - [x] Funcionality of +/- button.
 - [ ] Funcitionality of % button.
 - [ ] AC Button working but don't update.
+- [ ] Add max lenght to input.
