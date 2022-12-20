@@ -68,10 +68,22 @@ body{
 .orange{
     background:#F69906!important;
     color: #fff;
+    font-weight: 600;
+}
+
+.orange:hover{
+    background:#ffc05b!important;
+    color: #fff;
 }
 
 .gray{
     background:#A0A0A0!important;
+    color: #000!important;
+    font-weight: 600;
+}
+
+.gray:hover{
+    background:#e7e7e7!important;
     color: #000!important;
 }
 
@@ -89,7 +101,7 @@ body{
     left: 0;
     justify-content: center;
     display: none;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.2);
     opacity: 0%;
     transition: all 0.2s ease-in-out;
 }

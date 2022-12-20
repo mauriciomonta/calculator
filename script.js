@@ -71,9 +71,6 @@ function firstStep(operatorSym) {
     return;
 }
 
-
-
-
 function result() {
 
     //add empty input alert
@@ -103,6 +100,9 @@ function result() {
     showNum.value = finalRes;
 }
 
+function Oposite() {
+    showNum.value = showNum.value * -1;
+}
 
 
 function Copy() {
