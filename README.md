@@ -1,5 +1,7 @@
 # Calculator (📱iOS design)
 
+![preview](https://i.imgur.com/rFNUwIA.png)
+
 Pending tasks:
 - [x] Add more buttons, like ios calc.
 - [x] Work on css sheet.
