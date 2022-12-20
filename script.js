@@ -4,18 +4,55 @@ let numA = null;
 let numB = null;
 let finalRes;
 
+// numpad buttons
+
+document.addEventListener('keydown', function (event) {
+    console.log(event.keyCode, event.key);
+
+    if (event.key >= 0 && event.key <= 9) {
+        showNum.value += event.key;
+    } else if (event.key == '.') {
+        showNum.value += event.key;
+    } else if (event.keyCode == 56) {
+        firstStep('*');
+    } else if (event.key == '=' || event.key == 'Enter') {
+        result();
+    } else if (event.key == '+') {
+        firstStep('+');
+    }
+    else if (event.keyCode == 189) {
+        firstStep('-');
+    }
+    else if (event.keyCode == 191) {
+        firstStep('/');
+    }
+    else if (event.keyCode == 8) {
+        showNum.value = showNum.value.slice(0, -1);
+    }
+
+});
+
 function firstStep(operatorSym) {
 
     numA = parseFloat(showNum.value);
-    console.log(numA);
+    console.log('num A:', numA);
     showNum.value = '';
     operator = operatorSym.value;
-    console.log(operator);
+    if (!operator) {
+        operator = operatorSym;
+    }
+    console.log('op:', operator);
 
     return;
 }
 
+
+
+
 function result() {
+
+
+
     numB = parseFloat(showNum.value);
 
     switch (operator) {
@@ -33,10 +70,12 @@ function result() {
             break;
     }
 
-    console.log(numA, numB);
+    console.log('num A y B:', numA, numB);
     console.log('res', finalRes);
     showNum.value = finalRes;
 }
+
+
 
 function Copy() {
     let copyText = document.getElementsByName("showNum");
