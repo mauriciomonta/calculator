@@ -76,6 +76,9 @@ function firstStep(operatorSym) {
 
 function result() {
 
+    //add empty input alert
+    //add empty input alert
+    //add empty input alert
 
 
     numB = parseFloat(showNum.value);
@@ -132,6 +135,12 @@ function Copy() {
     console.log("Copied the text: " + clipboard);
 
     // show alert
+    if (showNum.value) {
+        document.getElementById("copied").innerHTML = 'Result copied to clipboard.';
+    } else {
+        document.getElementById("copied").innerHTML = 'Nothing to copy.';
+    }
+
     document.getElementById("copied").classList.add("flex");
     setTimeout(() => {
         document.getElementById("copied").classList.add("opacity");
