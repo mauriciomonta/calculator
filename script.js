@@ -3,6 +3,31 @@ let showNum = document.getElementsByName('showNum')[0];
 let numA = null;
 let numB = null;
 let finalRes;
+let clear;
+
+
+//ac / c button
+
+function clearAll() {
+    if (showNum.value) {
+        clear = 'C';
+        console.log(clear);
+    } else {
+        clear = 'AC';
+        console.log(clear);
+    }
+
+    if (clear == 'AC') {
+        showNum.value = '';
+        numA = null;
+        numB = null;
+        finalRes = null;
+        operator = null;
+    } else {
+        showNum.value = '';
+    }
+
+}
 
 // numpad buttons
 
